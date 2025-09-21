@@ -1,0 +1,6 @@
+# 行尾转换
+# 保证所有文件在提交时使用 LF 行尾
+* text=auto eol=lf
+
+# 将 定义文件类型
+*.js linguist-language=JavaScript
