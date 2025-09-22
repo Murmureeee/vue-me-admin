@@ -1,4 +1,4 @@
-import { getPersonalTeam, getUserInfo } from '@/apis/user'
+import { getUserInfo } from '@/apis/user'
 import { pinia } from '@/stores'
 import type { Recordable } from '#/helper'
 

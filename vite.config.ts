@@ -4,6 +4,7 @@ import { TDesignResolver } from '@tdesign-vue-next/auto-import-resolver'
 
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import tailwindcss from '@tailwindcss/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -17,6 +18,7 @@ export default defineConfig(({ mode }) => {
       vue(),
       vueJsx(),
       vueDevTools(),
+      tailwindcss(),
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],
         dts: 'types/auto/auto-imports.d.ts',
